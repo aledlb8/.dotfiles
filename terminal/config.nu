@@ -7,15 +7,15 @@ $env.config.show_banner = false
 
 let current_dir = (pwd | str downcase | str replace "/" "\\")
 if $current_dir == "c:\\windows\\system32" {
-    cd "C:\\Users\\alede"
+    cd "C:\\Users\\<user>"
 }
 
 clear
 
 def config [] {
     ^code ...[
-        "C:\\Users\\alede\\AppData\\Roaming\\alacritty\\alacritty.toml"
-        "C:\\Users\\alede\\AppData\\Roaming\\nushell\\config.nu"
-        "C:\\Users\\alede\\.config\\starship.toml"
+        "C:\\Users\\<user>\\AppData\\Roaming\\alacritty\\alacritty.toml"
+        "C:\\Users\\<user>\\AppData\\Roaming\\nushell\\config.nu"
+        "C:\\Users\\<user>\\.config\\starship.toml"
     ]
 }
